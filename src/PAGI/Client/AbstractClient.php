@@ -479,6 +479,18 @@ abstract class AbstractClient implements IClient
     }
 
     /**
+     * @throws ChannelDownException
+     * @throws InvalidCommandException
+     */
+    public function break()
+    {
+        $result = $this->send('ASYNCAGI BREAK');
+        if($result->isResult(-1)) {
+            throw new ChannelDownException('Answer failed');
+        }
+    }
+
+    /**
      * (non-PHPdoc)
      * @see PAGI\Client.IClient::answer()
      */
