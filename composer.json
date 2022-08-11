@@ -1,0 +1,35 @@
+{
+    "name": "abdullah/pagiv2",
+    "description": "Asterisk Gateway Interface (AGI) client for PHP, suitable to make telephony applications using call flow nodes",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Abdullah Basit",
+            "email": "abdullah.basit@hotmail.com",
+            "homepage": "https://github.com/91Abdullah",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PAGI\\": "src/PAGI"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "psr/log": ">= 1.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*",
+        "monolog/monolog": "1.*",
+        "squizlabs/php_codesniffer": "2.*",
+        "phpdocumentor/phpdocumentor": "2.*",
+        "phing/phing": "2.*",
+        "phpmd/phpmd": "2.*",
+        "satooshi/php-coveralls": "0.*",
+        "evert/phpdoc-md" : "~0.1.1",
+        "codeclimate/php-test-reporter": "dev-master",
+        "sebastian/phpcpd": "*"
+    }
+}
